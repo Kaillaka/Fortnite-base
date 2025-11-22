@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e8ed0d85-dbf2-434a-9fe5-d789e246be2d}</ProjectGuid>
+    <RootNamespace>Fortmeme</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\admin\Desktop\Nouveau dossier (7)\boostext\render\ImGui\gui\thirdparty\include;C:\Users\admin\Desktop\Nouveau dossier (7)\boostext\render\ImGui;C:\Users\admin\Desktop\Nouveau dossier (7)\boostext\render\ImGui\gui;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="render\ImGui\gui\compbuilder\CompBuilder.cpp" />
+    <ClCompile Include="render\ImGui\gui\gui.cpp" />
+    <ClCompile Include="render\ImGui\gui\managers\ChildManager.cpp" />
+    <ClCompile Include="render\ImGui\gui\managers\ColorPickerManager.cpp" />
+    <ClCompile Include="render\ImGui\gui\managers\PopupManager.cpp" />
+    <ClCompile Include="render\ImGui\gui\managers\TabsManager.cpp" />
+    <ClCompile Include="render\ImGui\gui\managers\WidgetsManager.cpp" />
+    <ClCompile Include="render\ImGui\gui\web\web.cpp" />
+    <ClCompile Include="render\ImGui\imgui.cpp" />
+    <ClCompile Include="render\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="render\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="render\ImGui\imgui_freetype.cpp" />
+    <ClCompile Include="render\ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="render\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="render\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="render\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="util\settings.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="auth\auth.hpp" />
+    <ClInclude Include="cheat\driver\driver.hpp" />
+    <ClInclude Include="cheat\driver\input.h" />
+    <ClInclude Include="cheat\esp\esp.h" />
+    <ClInclude Include="cheat\sdk\offsets.hpp" />
+    <ClInclude Include="cheat\sdk\sdk.h" />
+    <ClInclude Include="aimbot\aimbot.h" />
+    <ClInclude Include="render\ImGui\gui\compbuilder\CompBuilder.hpp" />
+    <ClInclude Include="render\ImGui\gui\fonts.h" />
+    <ClInclude Include="render\ImGui\gui\gui.hpp" />
+    <ClInclude Include="render\ImGui\gui\managers\ChildManager.hpp" />
+    <ClInclude Include="render\ImGui\gui\managers\ColorPickerManager.hpp" />
+    <ClInclude Include="render\ImGui\gui\managers\FontManager.hpp" />
+    <ClInclude Include="render\ImGui\gui\managers\ImageManager.hpp" />
+    <ClInclude Include="render\ImGui\gui\managers\LangManager.hpp" />
+    <ClInclude Include="render\ImGui\gui\managers\NotifyManager.hpp" />
+    <ClInclude Include="render\ImGui\gui\managers\PopupManager.hpp" />
+    <ClInclude Include="render\ImGui\gui\managers\SearchManager.hpp" />
+    <ClInclude Include="render\ImGui\gui\managers\StyleManager.hpp" />
+    <ClInclude Include="render\ImGui\gui\managers\TabsManager.hpp" />
+    <ClInclude Include="render\ImGui\gui\managers\WidgetsManager.hpp" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\animations.hpp" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\config\ftconfig.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\config\ftheader.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\config\ftmodule.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\config\ftoption.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\config\ftstdlib.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\config\integer-types.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\config\mac-support.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\config\public-macros.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\freetype.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftadvanc.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftbbox.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftbdf.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftbitmap.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftbzip2.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftcache.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftchapters.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftcid.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftcolor.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftdriver.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\fterrdef.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\fterrors.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftfntfmt.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftgasp.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftglyph.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftgxval.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftgzip.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftimage.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftincrem.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftlcdfil.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftlist.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftlogging.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftlzw.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftmac.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftmm.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftmodapi.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftmoderr.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftotval.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftoutln.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftparams.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftpfr.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftrender.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftsizes.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftsnames.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftstroke.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftsynth.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftsystem.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\fttrigon.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\fttypes.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ftwinfnt.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\autohint.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\cffotypes.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\cfftypes.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\compiler-macros.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\ftcalc.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\ftdebug.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\ftdrv.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\ftgloadr.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\fthash.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\ftmemory.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\ftmmtypes.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\ftobjs.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\ftpsprop.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\ftrfork.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\ftserv.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\ftstream.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\fttrace.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\ftvalid.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\psaux.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\pshints.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svbdf.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svcfftl.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svcid.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svfntfmt.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svgldict.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svgxval.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svkern.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svmetric.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svmm.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svotval.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svpfr.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svpostnm.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svprop.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svpscmap.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svpsinfo.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svsfnt.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svttcmap.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svtteng.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svttglyf.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\services\svwinfnt.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\sfnt.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\svginterface.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\t1types.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\tttypes.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\internal\wofftypes.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\otsvg.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\t1tables.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\ttnameid.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\tttables.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\freetype\tttags.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\ft2build.h" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\nlohmann\json.hpp" />
+    <ClInclude Include="render\ImGui\gui\thirdparty\include\nlohmann\json_fwd.hpp" />
+    <ClInclude Include="render\ImGui\gui\unicodes.hpp" />
+    <ClInclude Include="render\ImGui\gui\web\web.hpp" />
+    <ClInclude Include="render\ImGui\imconfig.h" />
+    <ClInclude Include="render\ImGui\imgui.h" />
+    <ClInclude Include="render\ImGui\imgui_freetype.h" />
+    <ClInclude Include="render\ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="render\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="render\ImGui\imgui_internal.h" />
+    <ClInclude Include="render\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="render\ImGui\imstb_textedit.h" />
+    <ClInclude Include="render\ImGui\imstb_truetype.h" />
+    <ClInclude Include="render\render.h" />
+    <ClInclude Include="util\settings.h" />
+    <ClInclude Include="util\skStr.h" />
+    <ClInclude Include="util\util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="auth\library_x64.lib" />
+    <Library Include="render\ImGui\gui\thirdparty\lib\freetype.lib" />
+    <Library Include="render\ImGui\gui\thirdparty\lib\freetype64.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
