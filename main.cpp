@@ -52,8 +52,8 @@ public:
 };
 
 // KeyAuth configuration
-std::string name = "rooted20";
-std::string ownerid = "FR1HpBgWN5";
+std::string name = "";
+std::string ownerid = "";
 std::string version = "1.0";
 std::string url = "https://keyauth.win/api/1.3/";
 std::string path = "";
@@ -273,4 +273,5 @@ private:
 int main() {
     Application app;
     return app.Run();
+
 }
